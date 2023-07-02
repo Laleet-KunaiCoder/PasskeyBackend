@@ -1,5 +1,8 @@
 import express, { Router } from "express";
-import { getAuthentication, verifyAuthentication } from "../controllers/authcontroller";
+import {
+  getAuthentication,
+  verifyAuthentication,
+} from "../controllers/authcontroller";
 
 const authenticationRouter: Router = express.Router();
 

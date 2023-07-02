@@ -1,5 +1,8 @@
 import express, { Router } from "express";
-import { getRegistration, verifyRegistration } from "../controllers/regcontroller";
+import {
+  getRegistration,
+  verifyRegistration,
+} from "../controllers/regcontroller";
 
 const registrationRouter: Router = express.Router();
 
