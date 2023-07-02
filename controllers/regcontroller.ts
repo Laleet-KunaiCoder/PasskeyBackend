@@ -28,8 +28,8 @@ const uid = () => {
 const getRegistration = async (req: Request, res: Response) => {
   try {
     // Username of the user
-    const userName = "laleet";
 
+    const userName: any = req.query.username;
     // Find the user in the database based on the username
     let userInDB: UserModel | null = await findUserByUsername(userName);
 

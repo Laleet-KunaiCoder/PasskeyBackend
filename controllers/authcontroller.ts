@@ -24,15 +24,9 @@ const rpID = "localhost";
 // The URL at which registrations and authentications should occur
 const origin = "http://localhost:5173";
 
-/**
- * Handle the authentication request.
- *
- * @param {Request} req - The request object.
- * @param {Response} res - The response object.
- */
 const getAuthentication = async (req: Request, res: Response) => {
   try {
-    const userName = "laleet";
+    const userName: any = req.query.username;
     const userInDB: UserModel | null = await findUserByUsername(userName);
 
     if (!userInDB) {
