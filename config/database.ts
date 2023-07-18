@@ -6,12 +6,7 @@ const MONGO_URI = process.env.MONGO_URI || " ";
 const connect = () => {
   // Connecting to the database
   mongoose
-    .connect(MONGO_URI, {
-      useUnifiedTopology: true,
-      useNewUrlParser: true,
-      useCreateIndex: true,
-      useFindAndModify: false,
-    })
+    .connect(MONGO_URI)
     .then(() => {
       console.log("Successfully connected to database");
     })
