@@ -32,7 +32,7 @@ const getRegistration = async (req: Request, res: Response) => {
     const userName: any = req.query.username;
     const plt: any = req.query.plt;
     console.log(plt);
-    
+
     // Find the user in the database based on the username
     let userInDB: UserModel | null = await findUserByUsername(userName);
 
@@ -58,7 +58,7 @@ const getRegistration = async (req: Request, res: Response) => {
       // (Recommended for smoother UX)
       timeout: 60000,
       attestationType: "none",
-      
+
       //Authenticator Selection
       authenticatorSelection: {
         authenticatorAttachment: plt,

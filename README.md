@@ -1,4 +1,5 @@
 # Passkey Backend
+
 The implementation described is based on Express, a popular web application framework for Node.js, and it utilizes TypeScript, a statically-typed superset of JavaScript, for development. The implementation incorporates two specific libraries: **@simplewebauthn/server** and **@simplewebauthn/browser**.
 
 **@simplewebauthn/server** is a fully-functional reference implementation of the Web Authentication (WebAuthn) server-side functionality. WebAuthn is a web standard that provides an API for creating and using public key credentials, allowing users to authenticate themselves securely without relying on passwords. The server-side implementation provided by **@simplewebauthn/server** enables the server to handle the necessary operations for WebAuthn, such as registration and authentication.
@@ -14,17 +15,22 @@ By combining the features of **@simplewebauthn/server** the Express TypeScript i
 ```shell
 npm install
 ```
+
 To start the nodemon server, run the following command:
+
 ```shell
 npm run dev
 ```
+
 To build the production-ready version of the backend applicaiton, run the following command
 
 ```shell
 npm run build
 ```
+
 The optimized build will be available in the dist directory.
 To format the all the javascript code you can user:
+
 ```shell
 npm run format
 ```
