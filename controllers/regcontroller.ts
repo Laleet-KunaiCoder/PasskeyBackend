@@ -3,7 +3,7 @@ import {
   generateRegistrationOptions,
   verifyRegistrationResponse,
 } from "@simplewebauthn/server";
-import { UserModel, Authenticator } from "../all_types";
+import { UserModel, Authenticator } from "../types";
 import {
   createUser,
   findUserByUsername,

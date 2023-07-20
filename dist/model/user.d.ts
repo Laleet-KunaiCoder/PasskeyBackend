@@ -23,7 +23,7 @@
 /// <reference types="mongoose/types/virtuals" />
 /// <reference types="mongoose" />
 /// <reference types="mongoose/types/inferschematype" />
-import { UserModel, Authenticator } from "../all_types";
+import { UserModel, Authenticator } from "../types";
 declare const User: import("mongoose").Model<UserModel, {}, {}, {}, import("mongoose").Document<unknown, {}, UserModel> & UserModel & {
     _id: import("mongoose").Types.ObjectId;
 }, any>;

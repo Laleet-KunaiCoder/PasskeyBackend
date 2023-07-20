@@ -1,5 +1,5 @@
 import { Schema, model } from "mongoose";
-import { UserModel, Authenticator } from "../all_types";
+import { UserModel, Authenticator } from "../types";
 
 // Create a Schema for the Authenticator
 const AuthenticatorSchema = new Schema<Authenticator>({
