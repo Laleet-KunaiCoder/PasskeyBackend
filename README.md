@@ -7,7 +7,11 @@ The implementation described is based on Express, a popular web application fram
 By combining the features of **@simplewebauthn/server** the Express TypeScript implementation can provide a complete WebAuthn solution. Users can securely register and authenticate themselves using public key credentials, enhancing the security and usability of the authentication process compared to traditional password-based methods.
 
 ## Installation
-
+First create a .env file that has follwing values
+```shell
+PORT=8080
+MONGO_URI= "mongodb+srv://<username>:<password>@atlascluster.y7auzji.mongodb.net/?retryWrites=true&w=majority"
+```
 1. Clone the repository.
 2. Navigate to the project directory.
 3. Install the dependencies by running the following command:
